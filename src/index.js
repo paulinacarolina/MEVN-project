@@ -1,8 +1,16 @@
 const express = require("express"); //declare express
 const app = express(); // initialize const for express
 
-//setting up the server on port 5050
+// settings 
+app.set('port', 5050);
 
-app.listen(5050, ()=>{
-console.log("server is working");
+//middlewares
+
+//routes 
+
+
+
+//setting up the server on port 5050
+app.listen(app.get('port'), ()=>{
+console.log("server is working", app.get('port')); // msg 
 });
