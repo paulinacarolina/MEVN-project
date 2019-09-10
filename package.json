@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/codelikeamexican/MEVN-project/issues"
   },
-  "homepage": "https://github.com/codelikeamexican/MEVN-project#readme"
+  "homepage": "https://github.com/codelikeamexican/MEVN-project#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
