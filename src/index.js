@@ -6,8 +6,11 @@ app.set('port', 5050);
 
 //middlewares
 
+
 //routes 
 
+//static files
+app.use(express.static(__dirname + '/public'));
 
 
 //setting up the server on port 5050
