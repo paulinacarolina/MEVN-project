@@ -1,12 +1,12 @@
 const express = require("express"); //declare express
 const app = express(); // initialize const for express
-
+const morgan = require('morgan');
 // settings 
 app.set('port', 5050);
 
 //middlewares
 //functions to process urls 
-
+app.use(morgan('dev'));
 
 //module to refresh server on any change
 
