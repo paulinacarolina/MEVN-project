@@ -6,7 +6,9 @@ app.set('port', 5010);
 
 //middlewares
 //functions to process urls 
-app.use(morgan('dev'));
+app.use(morgan('dev')); //mid for detailed info about requests
+app.use(express.json()); // middleware for the data 
+
 
 //module to refresh server on any change
 
