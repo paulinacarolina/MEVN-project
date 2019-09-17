@@ -5,6 +5,9 @@ const app = express(); // initialize const for express
 app.set('port', 5050);
 
 //middlewares
+//functions to process urls 
+
+
 //module to refresh server on any change
 
 
