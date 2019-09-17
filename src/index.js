@@ -1,14 +1,20 @@
 const express = require("express"); //declare express
 const app = express(); // initialize const for express
-
+const morgan = require('morgan');
 // settings 
-app.set('port', 5050);
+app.set('port', 5010);
 
 //middlewares
+//functions to process urls 
+app.use(morgan('dev')); //mid for detailed info about requests
+app.use(express.json()); // middleware for the data 
+
+
 //module to refresh server on any change
 
 
 //routes 
+app.use('/tasks', require('./routes/tasks'));
 
 //static files
 app.use(express.static(__dirname + '/public'));
