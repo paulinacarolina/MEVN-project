@@ -14,6 +14,7 @@ app.use(express.json()); // middleware for the data
 
 
 //routes 
+app.use(require('./routes/tasks'));
 
 //static files
 app.use(express.static(__dirname + '/public'));
