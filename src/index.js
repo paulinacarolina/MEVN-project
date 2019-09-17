@@ -2,7 +2,7 @@ const express = require("express"); //declare express
 const app = express(); // initialize const for express
 const morgan = require('morgan');
 // settings 
-app.set('port', 5050);
+app.set('port', 5010);
 
 //middlewares
 //functions to process urls 
