@@ -1,9 +1,13 @@
 const express = require("express"); //declare express
 const app = express(); // initialize const for express
 const morgan = require('morgan');
+const mongoose = require('mongoose');
+
+
 // settings 
 app.set('port', 5010);
 
+moongose.connect('mongodb://localahost:mevn-database');
 //middlewares
 //functions to process urls 
 app.use(morgan('dev')); //mid for detailed info about requests
