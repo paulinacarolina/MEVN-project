@@ -1,9 +1,12 @@
 const express = require('express');
 const router = express.Router();
-
+const task = require('./model/Task');
 router.get('/', (req, res)  =>
 {
-res.send('Api TASKS here');
+task.find()
+.then(data=>{
+    res.json(data)
+})
 });
 
 module.exports = router;
