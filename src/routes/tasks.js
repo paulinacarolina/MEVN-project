@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const task = require('./model/Task');
+const task = require('./models/Task');
 router.get('/', (req, res)  =>
 {
 task.find()
-.then(data=>{
+.then(data=> {
     res.json(data)
 })
 });
