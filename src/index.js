@@ -8,8 +8,9 @@ const mongoose = require('mongoose');
 app.set('port', 5010);
 
 mongoose.connect('mongodb://localahost:mevn-database')
-.then(db  => console.log("database is connected"))
-.catch (err => console.error(err));
+.then(db  => console.log('database is connected'))
+.catch (err => console.error(err));//show error
+
 //middlewares
 //functions to process urls 
 app.use(morgan('dev')); //mid for detailed info about requests
