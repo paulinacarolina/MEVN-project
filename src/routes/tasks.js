@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
-
-router.get('/', (req, res)  =>
+const task = require('./models/Task');
+router.get('/',async (req, res)  =>
 {
-res.send('Api TASKS here');
+   const tasks =  await task.find();// storing all the tasks if db responds
+   console.log(tasks);//printing the db results
 });
 
 module.exports = router;

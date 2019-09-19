@@ -5,11 +5,12 @@ const mongoose = require('mongoose');
 
 
 // settings 
-app.set('port', 5010);
+app.set('port', process.env.PORT || 3000); //set up getting port or default port
 
 mongoose.connect('mongodb://localahost:mevn-database')
-.then(db  => console.log("database is connected"))
-.catch (err => console.error(err));
+.then(db  => console.log('database is connected'))
+.catch (err => console.error(err));//show error
+
 //middlewares
 //functions to process urls 
 app.use(morgan('dev')); //mid for detailed info about requests
