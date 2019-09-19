@@ -1,12 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const task = require('./models/Task');
-router.get('/', (req, res)  =>
+router.get('/',async (req, res)  =>
 {
-task.find()
-.then(data=> {
-    res.json(data)
-})
+   const tasks =  await task.find();// storing all the tasks if db responds
+   console.log(tasks);//printing the db results
 });
 
 module.exports = router;
