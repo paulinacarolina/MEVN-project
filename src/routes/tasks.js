@@ -10,4 +10,10 @@ router.get('/',async (req, res)  =>
    console.log(tasks);//ptinting the db results in console
 });
 
+router.post('/',async (req, res)  =>
+{
+   new Task();//create new task
+   console.log(new Task());
+});
+
 module.exports = router;
