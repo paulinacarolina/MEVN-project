@@ -12,8 +12,8 @@ router.get('/',async (req, res)  =>
 
 router.post('/',async (req, res)  =>
 {
-   new Task();//create new task
-   console.log(new Task());
+   new task();//create new task
+   console.log(new task());
 });
 
 module.exports = router;
