@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 // settings 
 app.set('port', process.env.PORT || 5010); //set up getting port or default port
 
-mongoose.connect('mongodb://localhost:mevn-database')
+mongoose.connect('mongodb://localhost/mevnsdatabase')
 .then(db  => console.log('database is connected'))
 .catch (err => console.error(err));//show error
 
