@@ -5,9 +5,9 @@ const mongoose = require('mongoose');
 
 
 // settings 
-app.set('port', process.env.PORT || 3000); //set up getting port or default port
+app.set('port', process.env.PORT || 5010); //set up getting port or default port
 
-mongoose.connect('mongodb://localahost:mevn-database')
+mongoose.connect('mongodb://localhost/mevnsdatabase')
 .then(db  => console.log('database is connected'))
 .catch (err => console.error(err));//show error
 
@@ -21,7 +21,7 @@ app.use(express.json()); // middleware for the data
 
 
 //routes 
-app.use('/tasks', require('./routes/tasks'));
+app.use('/tasks', require('./routes/tasks.js'));
 
 //static files
 app.use(express.static(__dirname + '/public'));
