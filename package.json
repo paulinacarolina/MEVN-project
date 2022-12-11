@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/codelikeamexican/MEVN-project#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mongoose": "^5.7.1",
     "morgan": "^1.9.1",
     "nodemon": "^1.19.2"
